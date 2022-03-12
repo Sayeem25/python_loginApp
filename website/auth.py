@@ -23,9 +23,9 @@ def sign_up():
         elif len(name) < 2:
             flash('Name must be greater than 2 characters.', category='error')
         elif password != cpassword:
-            flash('Password don\'t match', category='error')
+            flash('Passwords don\'t match.', category='error')
         elif len(password) < 7:
-            flash('Name must be at least 4 characters.', category='error')
+            flash('Password must be at least 7 characters.', category='error')
         else:
             flash('Account create done!', category='success')
         
